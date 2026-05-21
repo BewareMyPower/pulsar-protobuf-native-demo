@@ -28,10 +28,7 @@ See [./pulsar-pb-native-java/README.md](./pulsar-pb-native-java/README.md) for i
 Install Python client 3.12.0 with protobuf support:
 
 ```bash
-# NOTE: this is an example for candidate 1 with Python 3.13 on macOS, after 3.12.0 is released, the link might be broken.
-#   Then you should install via `pip install pulsar-client[protobuf]` without specifying the wheel file.
-curl -O -L https://dist.apache.org/repos/dist/dev/pulsar/pulsar-client-python-3.12.0-candidate-1/macos/pulsar_client-3.12.0-cp313-cp313-macosx_13_0_universal2.whl
-python3 -m pip install "pulsar_client-3.12.0-cp313-cp313-macosx_13_0_universal2.whl[protobuf]" --force-reinstall
+python3 -m pip install 'pulsar_client[protobuf]==3.12.0' --force-reinstall
 ```
 
 ## Demo
